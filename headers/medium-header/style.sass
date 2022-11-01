@@ -1,0 +1,67 @@
+@font-face
+  font-family: "CircularStd"
+  src: url(fonts/CircularStd-Medium.woff2)
+  font-weight: 500
+  font-style: normal
+  font-display: swap
+
+$comet: #56597A
+$bombay: #AAAAAB
+
+html
+  box-sizing: border-box
+
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
+body
+  margin: 0
+  font-family: "CircularStd", sans-serif
+  font-weight: 500
+  font-size: 20px
+  line-height: 30px
+
+.container
+  margin: 0 auto
+  padding: 0 15px
+
+.header
+  padding-top: 45px
+
+  &__container
+    max-width: 1205px
+
+  &__wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.menu
+  margin: 0
+  padding: 0
+  list-style: none
+  display: flex
+  align-items: center
+
+  &__item
+    margin-right: 75px
+    line-height: 0
+    &:hover .menu__link
+      color: $bombay
+
+  &__link
+    text-decoration: none
+    color: $comet
+    transition: color .4s
+
+.logo
+  line-height: 0
+  &:hover .logo__img
+    transform: scale(95%)
+
+  &__img
+    width: 106px
+    height: auto
+    transition: transform .4s
