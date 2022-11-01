@@ -1,3 +1,33 @@
+@font-face
+  font-family: "ProximaNova"
+  src: url(fonts/ProximaNova-Regular.woff2)
+  font-weight: 400px
+  font-style: normal
+  font-display: swap
+
+$outer-space: #323941
+$white: #FFFFFF
+
+html
+  box-sizing: border-box
+
+*,
+*::before,
+*::after
+  box-sizing: inherit
+
+body
+  margin: 0
+  font-family: "ProximaNova"
+  font-weight: 400
+  font-size: 18px
+  line-height: 22px
+
+.container
+  max-width: 645px
+  margin: 0 auto
+  padding: 0 15px
+
 .header
   padding-top: 15px
   padding-bottom: 15px
@@ -17,6 +47,8 @@
     &:hover .menu__link
       &::after
         width: 100%
+        left: 0
+        border-top: 2px solid $white
 
   &__link
     text-transform: uppercase
@@ -29,6 +61,5 @@
       width: 0
       border-top: 2px solid $white
       top: 95%
-      left: 50%
-      transform: translateX(-50%)
-      transition: width .4s
+      right: 0
+      transition: width .6s

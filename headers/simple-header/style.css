@@ -1,6 +1,6 @@
 @font-face {
   font-family: "ProximaNova";
-  src: url(simple-headers/resources/fonts/ProximaNova-Regular.woff2);
+  src: url(fonts/ProximaNova-Regular.woff2);
   font-weight: 400px;
   font-style: normal;
   font-display: swap;
@@ -50,6 +50,8 @@ body {
 }
 .menu__item:hover .menu__link::after {
   width: 100%;
+  left: 0;
+  border-top: 2px solid #FFFFFF;
 }
 .menu__link {
   text-transform: uppercase;
@@ -63,7 +65,6 @@ body {
   width: 0;
   border-top: 2px solid #FFFFFF;
   top: 95%;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: width 0.4s;
+  right: 0;
+  transition: width 0.6s;
 }/*# sourceMappingURL=style.css.map */
