@@ -1,0 +1,34 @@
+.header
+  padding-top: 15px
+  padding-bottom: 15px
+  background-color: $outer-space
+
+.menu
+  margin: 0
+  padding: 0
+  display: flex
+  align-items: center
+  list-style: none
+
+  &__item
+    margin-right: 35px
+    &:last-child
+      margin-right: 0
+    &:hover .menu__link
+      &::after
+        width: 100%
+
+  &__link
+    text-transform: uppercase
+    text-decoration: none
+    color: $white
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      width: 0
+      border-top: 2px solid $white
+      top: 95%
+      left: 50%
+      transform: translateX(-50%)
+      transition: width .4s
