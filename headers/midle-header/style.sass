@@ -1,0 +1,98 @@
+@font-face
+  font-family: "GothamPro"
+  src: url(fonts/GothamPro.woff2)
+  font-weight: 400
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: "GothamPro-Medium"
+  src: url(fonts/GothamPro-Medium.woff2)
+  font-weight: 500
+  font-style: normal
+  font-display: swap
+
+$white: #FFFFFF
+$mine-shaft: #333333
+$sushi: #87B645
+
+html
+  box-sizing: border-box
+
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
+body
+  margin: 0
+  font-family: "GothamPro", sans-serif
+  font-weight: 400
+  font-size: 24px
+  line-height: 130%
+
+.container
+  margin: 0 auto
+  padding: 0 15px
+
+.header
+  padding-top: 40px
+
+  &__cotainer
+    max-width: 1800px
+
+  &__wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__button
+    padding: 13px 83px
+    background-color: $sushi
+    text-decoration: none
+    color: $white
+    border: 2px solid $sushi
+    transition: all .4s
+    &:hover
+      background-color: $white
+      color: $sushi
+
+.menu
+  margin: 0
+  padding: 0
+  list-style: none
+  display: flex
+  align-items: center
+
+  &__item
+    margin-right: 95px
+    line-height: 0
+    &:last-child
+      margin-right: 0
+    &:hover .menu__link
+      &::after
+        width: 100%
+        left: 0
+
+  &__link
+    text-decoration: none
+    color: $mine-shaft
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      width: 0
+      border-top: 2px solid $mine-shaft
+      right: 0
+      bottom: 0
+      transition: all .4s
+
+.logo
+  line-height: 0
+  &:hover .logo__img
+    transform: scale(95%)
+
+  &__img
+    width: 170px
+    height: auto
+    transition: transform .4s
