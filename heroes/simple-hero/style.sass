@@ -1,0 +1,130 @@
+@font-face
+  font-family: "Montserrat"
+  src: url(fonts/Montserrat.woff2)
+  font-weight: 400
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: "Nordin"
+  src: url(fonts/Nordin.woff2)
+  font-weight: 400
+  font-style: normal
+  font-display: swap
+
+$white: #FFFFFF
+
+html
+  box-sizing: border-box
+
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
+body
+  margin: 0
+  font-family: "Montserrat", sans-serif
+  font-weight: 400
+  font-size: 22px
+  line-height: 23px
+  color: $white
+
+.container
+  max-width: 680px
+  margin: 0 auto
+  padding: 0 15px
+
+.header
+  padding-top: 35px
+  position: absolute
+  left: 0
+  right: 0
+
+  &__container
+    max-width: 1370px
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 585px
+    width: 100%
+
+  &__number
+    text-decoration: none
+    color: $white
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      width: 0
+      border-top: 2px solid $white
+      top: 95%
+      right: 0
+      transition: all .4s
+    &:hover
+      &::after
+        width: 100%
+        left: 0
+
+  &__text
+
+.menu
+  display: flex
+  align-items: center
+  margin: 0
+  padding: 0
+  list-style: none
+
+  &__item
+    margin-right: 45px
+    &:last-child
+      margin-right: 0
+    &:hover .menu__link
+      &::after
+        width: 100%
+
+  &__link
+    text-decoration: none
+    color: $white
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      width: 0
+      border-top: 2px solid $white
+      top: 95%
+      left: 50%
+      transform: translateX(-50%)
+      transition: width .4s
+
+.hero
+  padding-top: 305px
+  padding-bottom: 375px
+  background-image: url(img/background.jpg)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+  &__wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__title
+    margin: 0
+    margin-bottom: 50px
+    font-family: 'Nordin', sans-serif
+    font-weight: 400
+    font-size: 200px
+    line-height: 145px
+
+  &__text
+    font-size: 50px
+    line-height: 60px

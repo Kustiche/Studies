@@ -51,6 +51,9 @@ body {
   margin-right: 75px;
   line-height: 0;
 }
+.menu__item:last-child {
+  margin-right: 0;
+}
 .menu__item:hover .menu__link {
   color: #AAAAAB;
 }
