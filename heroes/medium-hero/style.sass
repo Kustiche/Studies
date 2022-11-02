@@ -57,6 +57,7 @@ body
 
 .button
   background-color: $cello
+  border: 2px solid $cello
 
 .header
   padding-top: 90px
@@ -80,29 +81,20 @@ body
   &__button
     text-decoration: none
 
-  &__button--registration
-    color: $lunch
-    position: relative
-    &::after
-      content: ""
-      position: absolute
-      width: 0
-      border-top: 2px dashed $anakiwa
-      top: 95%
-      right: 0
-      transition: all .4s
-    &:hover
-      &::after
-        width: 100%
-        left: 0
+    &--registration
+      border: none
+      color: $lunch
+      transition: color .4s
+      &:hover
+        color: $anakiwa
 
-  &__button--entry
-    padding: 15px 20px
-    color: $white
-    border-radius: 10px
-    transition: transform .4s
-    &:hover
-      transform: scale(95%)
+    &--entry
+      padding: 12px 18px
+      color: $white
+      border-radius: 10px
+      transition: background-color .4s
+      &:hover
+        background-color: transparent
 
 .menu
   display: flex
@@ -132,8 +124,7 @@ body
     height: auto
 
 .hero
-  padding-top: 55px
-  padding-bottom: 260px
+  height: 100vh
 
   &__wrap
     display: flex
@@ -167,7 +158,6 @@ body
 
   &__button
     padding: 8px 33px
-    border: 2px solid $cello
     font-family: "SFProDisplay-Regular", sans-serif
     font-weight: 400
     font-size: 24px

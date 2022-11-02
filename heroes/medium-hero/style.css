@@ -54,6 +54,7 @@ body {
 
 .button {
   background-color: #1E4365;
+  border: 2px solid #1E4365;
 }
 
 .header {
@@ -79,30 +80,21 @@ body {
   text-decoration: none;
 }
 .header__button--registration {
+  border: none;
   color: #76869F;
-  position: relative;
+  transition: color 0.4s;
 }
-.header__button--registration::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-top: 2px dashed #ACCCFE;
-  top: 95%;
-  right: 0;
-  transition: all 0.4s;
-}
-.header__button--registration:hover::after {
-  width: 100%;
-  left: 0;
+.header__button--registration:hover {
+  color: #ACCCFE;
 }
 .header__button--entry {
-  padding: 15px 20px;
+  padding: 12px 18px;
   color: #FFFFFF;
   border-radius: 10px;
-  transition: transform 0.4s;
+  transition: background-color 0.4s;
 }
 .header__button--entry:hover {
-  transform: scale(95%);
+  background-color: transparent;
 }
 
 .menu {
@@ -137,8 +129,7 @@ body {
 }
 
 .hero {
-  padding-top: 55px;
-  padding-bottom: 260px;
+  height: 100vh;
 }
 .hero__wrap {
   display: flex;
@@ -172,7 +163,6 @@ body {
 }
 .hero__button {
   padding: 8px 33px;
-  border: 2px solid #1E4365;
   font-family: "SFProDisplay-Regular", sans-serif;
   font-weight: 400;
   font-size: 24px;
