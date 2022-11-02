@@ -51,12 +51,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.header__inner {
+.header__address {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 585px;
   width: 100%;
+  font-style: normal;
 }
 .header__number {
   text-decoration: none;
@@ -76,6 +77,7 @@ body {
   width: 100%;
   left: 0;
 }
+
 .menu {
   display: flex;
   align-items: center;
