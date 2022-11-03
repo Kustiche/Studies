@@ -1,0 +1,158 @@
+@font-face
+  font-family: "Oswald-Regular"
+  src: url(fonts/Oswald-Regular.woff2)
+  font-weight: 400
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: "Oswald-Medium"
+  src: url(fonts/Oswald-Medium.woff2)
+  font-weight: 500
+  font-style: normal
+  font-display: swap
+
+$white: #FFFFFF
+$black: #000000
+$dusty-gray: #999999
+$carnation: #F7654A
+$scarpa-flow: #535059
+
+html
+  box-sizing: border-box
+
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
+body
+  margin: 0
+  font-family: 'Oswald-Medium', sans-serif
+  font-weight: 500
+  font-size: 18px
+  line-height: 27px
+  color: $white
+
+.container
+  max-width: 1140px
+  margin: 0 auto
+  padding: 0 15px
+
+.header
+  padding: 15px 0
+  background-color: $scarpa-flow
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 205px
+    width: 100%
+
+  &__number
+    font-family: "Oswald-Regular", sans-serif
+    font-weight: 400
+    font-size: 20px
+    line-height: 30px
+    text-decoration: none
+    color: $white
+    transition: transform .4s
+    &:hover
+      transform: scale(95%)
+
+  &__burger
+    padding: 8px 13px
+    border: 2px solid $carnation
+    background-color: $carnation
+    cursor: pointer
+    transition: all .4s
+    &:hover
+      background-color: transparent
+      border: 2px dashed $carnation
+
+  &__img
+    width: 21px
+    height: auto
+
+.logo
+  max-width: 60px
+  line-height: 0
+
+  &__img
+    width: 100%
+    height: auto
+
+.hero
+  padding-top: 190px
+  padding-bottom: 320px
+  background-image: url(img/background.jpg)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+  &__wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 735px
+
+  &__title
+    margin: 0
+    margin-bottom: 35px
+    font-size: 64px
+    line-height: 95px
+    letter-spacing: 0.04em
+    text-align: center
+    text-transform: uppercase
+
+  &__text
+    margin: 0
+    font-size: 18px
+    line-height: 27px
+    text-align: center
+
+  &__experience
+    position: absolute
+    bottom: -25%
+    left: 50%
+    transform: translate(-50%, 100%)
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 55px 190px
+    max-width: 1110px
+    width: 100%
+    background-color: $white
+
+  &__inner
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__heading
+    margin: 0
+    margin-bottom: 5px
+    font-size: 72px
+    line-height: 107px
+    color: $carnation
+
+  &__caption
+    margin: 0
+    font-size: 36px
+    line-height: 53px
+    color: $black
+
+  &__excerpt
+    color: $dusty-gray

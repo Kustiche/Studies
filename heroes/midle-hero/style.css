@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url(fonts/Oswald-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url(fonts/Oswald-Medium.woff2);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding: 15px 0;
+  background-color: #535059;
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 205px;
+  width: 100%;
+}
+.header__number {
+  font-family: "Oswald-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: transform 0.4s;
+}
+.header__number:hover {
+  transform: scale(95%);
+}
+.header__burger {
+  padding: 8px 13px;
+  border: 2px solid #F7654A;
+  background-color: #F7654A;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.header__burger:hover {
+  background-color: transparent;
+  border: 2px dashed #F7654A;
+}
+.header__img {
+  width: 21px;
+  height: auto;
+}
+
+.logo {
+  max-width: 60px;
+  line-height: 0;
+}
+.logo__img {
+  width: 100%;
+  height: auto;
+}
+
+.hero {
+  padding-top: 190px;
+  padding-bottom: 320px;
+  background-image: url(img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 735px;
+}
+.hero__title {
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hero__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
+.hero__experience {
+  position: absolute;
+  bottom: -25%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 55px 190px;
+  max-width: 1110px;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__heading {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 72px;
+  line-height: 107px;
+  color: #F7654A;
+}
+.hero__caption {
+  margin: 0;
+  font-size: 36px;
+  line-height: 53px;
+  color: #000000;
+}
+.hero__excerpt {
+  color: #999999;
+}/*# sourceMappingURL=style.css.map */
