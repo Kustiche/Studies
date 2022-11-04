@@ -39,6 +39,16 @@ body
   margin: 0 auto
   padding: 0 15px
 
+.btn-reset
+  padding: 0
+  border: none
+  background-color: transparent
+  cursor: pointer
+
+.link-reset
+  text-decoration: none
+  color: inherit
+
 .header
   padding: 15px 0
   background-color: $scarpa-flow
@@ -61,17 +71,15 @@ body
     font-weight: 400
     font-size: 20px
     line-height: 30px
-    text-decoration: none
-    color: $white
     transition: transform .4s
     &:hover
       transform: scale(95%)
 
   &__burger
-    padding: 8px 13px
+    width: 46px
+    height: 46px
     border: 2px solid $carnation
     background-color: $carnation
-    cursor: pointer
     transition: all .4s
     &:hover
       background-color: transparent
@@ -80,6 +88,33 @@ body
   &__img
     width: 21px
     height: auto
+
+.burger
+  position: relative
+
+  &__line
+    position: absolute
+    width: 20px
+    height: 3px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: $white
+    &::after, &::before
+      content: ""
+      position: absolute
+      width: 20px
+      height: 3px
+      background-color: $white
+      top: 0
+      left: 50%
+      transform: translate(-50%)
+
+    &::after
+      top: 6px
+
+    &::before
+      top: -6px
 
 .logo
   max-width: 60px
@@ -92,7 +127,7 @@ body
 .hero
   padding-top: 190px
   padding-bottom: 320px
-  background-image: url(img/background.jpg)
+  background-image: url(img/hero-btn.jpg)
   background-position: center
   background-repeat: no-repeat
   background-size: cover
